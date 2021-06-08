@@ -1,2 +1,3 @@
 # covid-tracker
-COVID-Tracker using Vue.JS
+
+This COVID 19 tracker will be created using VUE.JS
