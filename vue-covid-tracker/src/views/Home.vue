@@ -15,13 +15,15 @@
 
 import DataTitle from '@/components/DataTitle'
 import DataBoxes from '@/components/DataBoxes'
+import CountrySelect from '@/components/CountrySelect'
 
 
 export default {
   name: 'Home',
   components: {
     DataTitle,
-    DataBoxes
+    DataBoxes,
+    CountrySelect
   },
   data() {
     return {
@@ -46,7 +48,7 @@ export default {
     this.dataDate = data.dateDate
     this.stats = data.Global
     this.countries = data.countries
-    this.loading = true
+    this.loading = false
   },
 }
 </script>
