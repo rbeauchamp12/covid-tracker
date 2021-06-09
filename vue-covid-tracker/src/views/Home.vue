@@ -45,7 +45,7 @@ export default {
     const countries = ref([]);
 
     const fetchCovidData = async () => {
-      const res = await fetch('https://covid19api.com/summary');
+      const res = await fetch('https://api.covid19api.com/');
       return await res.json();
     };
 
