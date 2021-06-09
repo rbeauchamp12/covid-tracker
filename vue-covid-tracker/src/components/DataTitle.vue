@@ -6,6 +6,22 @@
 </template>
 
 <script>
+
+import dayjs from 'dayjs';
+import { computed } from 'vue';
+
+export default { 
+    name: 'DataTitle',
+    props: ['text', 'dataDate'],
+    setup ({ dataDate }) {
+        return {
+            timestamp: computed(() => dayjs(dataDate)
+            .format('MMMM D YYYY, h:mm:ss a'))
+        };
+    }
+};
+
+/*
 import moment from 'moment'
 export default{
     name: 'DataTitle',
@@ -15,5 +31,5 @@ export default{
             return moment(this.dataDate).format('MMMM Do YYYY, h:mm:ss a')
         }
     }
-}
+}*/
 </script>

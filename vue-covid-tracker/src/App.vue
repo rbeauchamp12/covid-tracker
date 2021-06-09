@@ -3,7 +3,6 @@
     <div class="container mx-auto">
       <router-view />
     </div>
-
 </template>
 
 <!-- adding the import for header -->
@@ -12,8 +11,8 @@ import Header from '@/components/Header'
 
 export default {
   components: {
-    Header,
-  },
-}
+    Header
+  }
+};
 
 </script>

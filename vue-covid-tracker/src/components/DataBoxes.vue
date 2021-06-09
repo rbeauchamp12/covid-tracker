@@ -38,7 +38,24 @@
 </template>
 
 <script>
-  export default {
+export default {
+    name: 'DataBoxes',
+    props: ['stats'],
+    setup () {
+        return {
+            numberWithCommas (x) {
+                return x.toString ()
+                .replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+            }
+        };
+    }
+};
+
+
+
+
+
+/*  export default {
     name: 'DataBoxes',
         props: ['stats'],
 
@@ -47,6 +64,6 @@
                 return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
             }
         }
-    }
+    } */
 
 </script>
