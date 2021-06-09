@@ -1,6 +1,6 @@
 <template>
   <main v-if="!loading">
-    <DataTitle />
+    <DataTitle :text="title" :dataDate="dataDate" />
   </main>
 
   <main class="flex flex-col align-center justify-center text-center" v-else>
@@ -13,11 +13,9 @@
 <script>
 
 import DataTitle from '@/components/DataTitle'
-import DataTitle from '../components/DataTitle.vue'
 export default {
   name: 'Home',
   components: {
-    DataTitle
     DataTitle
   },
   data() {
